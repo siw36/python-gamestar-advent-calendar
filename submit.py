@@ -1,17 +1,17 @@
 import mechanize                #sudo pip install python-mechanize
 import datetime
-import ConfigParser
+import configparser
 import os
 
 # Read the ini file
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.sections()
 config.read('config.ini')
 
 # Current day
 day = datetime.datetime.now().day
 # Url with current day
-url = "https://www.gamestar.de/kalender/xmas2018,3/tag" + str(day) + ".html"
+url = "https://www.gamestar.de/kalender/xmas2019,6/tag" + str(day) + ".html"
 
 br = mechanize.Browser()
 br.set_handle_robots(False)
