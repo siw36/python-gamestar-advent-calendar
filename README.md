@@ -15,4 +15,4 @@ Set your details in the `config.ini` file.
 python3 submit.py
 ```
 
-Example cronjob: `10 12 * * * python3 <path to script>/submit.py > /dev/null 2>&1`
+Example cronjob: `10 09 * * * cd /home/siw/python-gamestar-advent-calendar && python3 submit.py >/dev/null 2>&1`
